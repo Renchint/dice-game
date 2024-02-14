@@ -89,7 +89,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         document.getElementById('score-' + activePlayer).textContent = score[activePlayer];
 
         // Уг тоглогч хожсон эсэхийг шалгах
-        if (score[activePlayer] >= 10) {
+        if (score[activePlayer] >= 100) {
             isNewGame = false;
             document.getElementById('name-' + activePlayer).textContent = 'WINNER !!!';;
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
